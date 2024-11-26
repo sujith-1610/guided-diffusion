@@ -10,7 +10,7 @@ from torch.utils.data import DataLoader, Dataset
 
 def load_data(
     *,
-    data_dir,
+    data_dir = "/content/drive/MyDrive/train_mat",
     batch_size,
     image_size,
     class_cond=False,
@@ -66,7 +66,7 @@ def load_data(
     while True:
         yield from loader
 
-data_dir = "/content/drive/MyDrive/train_mat"
+#data_dir = "/content/drive/MyDrive/train_mat"
 def _list_image_files_recursively(data_dir):
     results = []
     for entry in sorted(bf.listdir(data_dir)):
