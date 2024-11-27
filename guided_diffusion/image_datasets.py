@@ -5,6 +5,8 @@ from PIL import Image
 import blobfile as bf
 from mpi4py import MPI
 import numpy as np
+from scipy.io import loadmat
+
 from torch.utils.data import DataLoader, Dataset
 
 data_dir = "/content/drive/MyDrive/train_mat"
