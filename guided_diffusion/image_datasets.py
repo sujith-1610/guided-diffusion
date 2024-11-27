@@ -7,10 +7,10 @@ from mpi4py import MPI
 import numpy as np
 from torch.utils.data import DataLoader, Dataset
 
-
+data_dir = "/content/drive/MyDrive/train_mat"
 def load_data(
     *,
-    data_dir = "/content/drive/MyDrive/train_mat",
+    data_dir = data_dir,
     batch_size,
     image_size,
     class_cond=False,
