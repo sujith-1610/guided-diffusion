@@ -3,6 +3,7 @@ import random
 import numpy as np
 from PIL import Image
 import blobfile as bf
+import mpi4py
 from mpi4py import MPI
 import scipy.io
 from scipy.io import loadmat
