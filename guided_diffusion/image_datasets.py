@@ -8,7 +8,7 @@ from mpi4py import MPI
 import scipy.io
 from scipy.io import loadmat
 from torch.utils.data import DataLoader, Dataset
-data_dir = "/kaggle/input/lpet-new/train_mat_2"
+data_dir = "/kaggle/input/lpet-new-1/train_mat_2"
 
 def load_data(
     *,
